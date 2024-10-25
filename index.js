@@ -2,6 +2,7 @@
 function onClick(params) {
   //Here we take the vlaue of weight form html.
   let Weight = document.querySelector("#weight").value;
+  //Here we take the vlaue of weight form html.
   let Height = document.querySelector("#height").value;
   let theWeight = Weight;
   let theHeight = Height ** 2;
