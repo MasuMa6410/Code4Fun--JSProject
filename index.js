@@ -1,3 +1,4 @@
+//These lines of codes are for calculating the BMI of the body.
 function onClick(params) {
   let Weight = document.querySelector("#weight").value;
   let Height = document.querySelector("#height").value;
