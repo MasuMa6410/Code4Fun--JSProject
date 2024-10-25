@@ -4,52 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Exam</title>
-    <style>
-      body {
-        background-color: rgb(206, 169, 241);
-      }
-
-      h1 {
-        text-align: center;
-        font-size: 40px;
-        color: rgb(136, 76, 192);
-        margin-top: 100px;
-      }
-
-      div {
-        margin: 0 auto;
-        max-width: 40%;
-        padding: 50px;
-        height: 200px;
-        border: 2px solid white;
-        border-radius: 10px;
-      }
-
-      div form .inputs {
-        display: inline-block;
-        width: 100%;
-        padding: 10px 8px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: none;
-      }
-
-      div form .btn {
-        color: white;
-        padding: 10px 18px;
-        text-align: center;
-        margin-left: 200px;
-        background-color: rgb(182, 120, 240);
-        border: none;
-        border-radius: 4px;
-        margin-top: 15px;
-      }
-
-      #result {
-        color: white;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <h1>BMI Calculator</h1>
@@ -76,15 +32,5 @@
         <p id="result"></p>
       </form>
     </div>
-    <script>
-      function onClick(params) {
-        let Weight = document.querySelector("#weight").value;
-        let Height = document.querySelector("#height").value;
-        let theWeight = Weight;
-        let theHeight = Height ** 2;
-        let output = Math.floor(theWeight / theHeight);
-        document.querySelector("#result").innerHTML = `Your BMI is ${output}`;
-      }
-    </script>
   </body>
 </html>
